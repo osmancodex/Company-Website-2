@@ -9,7 +9,6 @@
 }
 
 
-
 /* HEADER HEADER */
 
 header {
@@ -439,14 +438,14 @@ header {
   }
 
   .hero-text-section h2 {
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 32px;
+    line-height: 40px;
     text-align: center;
   }
 
   .hero-text-section .hero-para {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 28px;
     text-align: center;
   }
 
@@ -465,7 +464,7 @@ header {
 
   .hero-icon-list {
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     gap: 10px;
   }
 
@@ -478,16 +477,19 @@ header {
     gap: 12px;
   }
 
-  .primary-btn,
-  .secondary-btn {
+  .primary-btn {
+    display: block;
+  }
+
+  /* .secondary-btn{
     width: 100%;
     font-size: 14px;
     padding: 10px;
-  }
+  } */
 
   .hero-img {
     width: 100%;
-    height: 200px;
+    height: 350px;
   }
 }
 
@@ -669,7 +671,7 @@ header {
   color: #FFFFFF;
   display: inline-block;
   padding-left: 100%;
-  animation: scroll 20s linear infinite;
+  animation: scroll 70s linear infinite;
 }
 
 .marquee-content span a {
@@ -699,15 +701,15 @@ header {
   }
 
   .marquee-content {
-    height: 40px;
+    height: 42px;
     padding: 6px;
   }
 
   .marquee-content span {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 27px;
     padding-left: 100%;
-    animation: scroll 12s linear infinite;
+    animation: scroll 50s linear infinite;
     /* faster scroll for small screens */
   }
 }
@@ -794,7 +796,7 @@ header {
   font-weight: 500;
   font-style: Medium;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 24px;
   color: #97B099;
   margin: 0;
 }
@@ -804,7 +806,7 @@ header {
   font-weight: 500;
   font-style: Medium;
   font-size: 30px;
-  line-height: 100%;
+  line-height: 38px;
   color: #1E1E1E;
 }
 
@@ -830,7 +832,7 @@ header {
   font-weight: 500;
   font-style: Medium;
   font-size: 20px;
-  line-height: 100%;
+  line-height: 28px;
   color: #333333;
 }
 
@@ -842,7 +844,7 @@ header {
 /* ========== Mobile (≤480px) ========== */
 @media (max-width: 480px) {
   #who {
-    padding: 40px 10px;
+    padding: 40px 15px;
   }
 
   .section-content {
@@ -850,23 +852,18 @@ header {
   }
 
   .section-content h4 {
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
   }
 
-  .who-text {
-    align-items: center;
-  }
 
   .who-we-are h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .service-tags {
     flex-direction: column;
     gap: 12px;
-    align-items: center;
   }
 
   .service-tag {
@@ -876,7 +873,7 @@ header {
   }
 
   .service-tag p {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -1029,6 +1026,8 @@ header {
 .tabs-contents {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 165px;
 }
 
 .tabs-contents img {
@@ -1053,7 +1052,7 @@ header {
   font-weight: 600;
   font-style: Semi Bold;
   font-size: 24px;
-  line-height: 100%;
+  line-height: 32px;
   color: #1E1E1E;
 }
 
@@ -1110,13 +1109,6 @@ header {
     width: 100%;
   }
 
-  .tab {
-    font-size: 14px;
-    padding: 10px 16px;
-    text-align: center;
-    width: 100%;
-  }
-
   .tabs-contents {
     flex-direction: column;
     gap: 20px;
@@ -1125,22 +1117,7 @@ header {
 
   .tabs-contents img {
     width: 100%;
-    height: 200px;
-  }
-
-  .tab-content-text h3 {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .tab-content-text .pills {
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .tab-content-text .pill {
-    font-size: 14px;
-    padding: 8px 12px;
+    height: auto;
   }
 }
 
@@ -1302,32 +1279,18 @@ header {
 /* ========== Mobile (≤480px) ========== */
 @media (max-width: 480px) {
   #booking-section {
-    padding: 50px 10px;
+    padding: 50px 20px;
   }
 
   .booking-cards {
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     width: 100%;
   }
 
   .booking-card {
     padding: 20px 12px;
-    gap: 8px;
-  }
-
-  .booking-card img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .booking-card h3 {
-    font-size: 16px;
-  }
-
-  .booking-card p {
-    font-size: 14px;
-    line-height: 20px;
+    gap: 15px;
   }
 }
 
@@ -1420,7 +1383,7 @@ header {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 17px;
   position: relative;
   overflow-y: hidden;
 }
@@ -1444,7 +1407,7 @@ header {
   font-weight: 500;
   font-style: Medium;
   font-size: 30px;
-  line-height: 100%;
+  line-height: 38px;
 }
 
 .mission img {
@@ -1467,31 +1430,19 @@ header {
 /* ========== Mobile (≤480px) ========== */
 @media (max-width: 480px) {
   #mission-section {
-    padding: 40px 10px;
+    padding: 40px 20px;
   }
 
   .mission {
     padding: 20px;
-    gap: 8px;
-    align-items: center;
   }
 
-  .mission-text {
-    font-size: 14px;
-    padding: 6px 8px;
-  }
-
-  .mission h4 {
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-  }
 
   .mission img {
-    position: static;
+    position: absolute;
     width: 100px;
     height: 100px;
-    margin: 10px auto 0;
+    margin: 20px auto 0;
     display: block;
   }
 }
@@ -1651,7 +1602,7 @@ header {
 /* ========== Mobile (≤480px) ========== */
 @media (max-width: 480px) {
   #together-section {
-    padding: 40px 10px;
+    padding: 40px 20px;
   }
 
   .together {
@@ -1671,29 +1622,26 @@ header {
   }
 
   .together-text h2 {
-    font-size: 22px;
-    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .together-text p {
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
+    font-size: 20px;
+    line-height: 27px;
   }
 
   .together-icon-list {
     gap: 10px;
   }
 
-  .together-icon span {
-    font-size: 14px;
-  }
+
 }
 
 /* ========== Small Tablets (481px – 767px) ========== */
 @media (min-width: 481px) and (max-width: 767px) {
   #together-section {
-    padding: 50px 15px;
+    padding: 50px 20px;
   }
 
   .together {
@@ -1813,7 +1761,7 @@ header {
   font-weight: 600;
   font-style: Semi Bold;
   font-size: 32px;
-  line-height: 100%;
+  line-height: 40px;
   color: #FFFFFF;
 }
 
@@ -1822,7 +1770,7 @@ header {
   font-weight: 500;
   font-style: Medium;
   font-size: 24px;
-  line-height: 100%;
+  line-height: 32px;
   color: #FFFFFF;
 }
 
@@ -1894,7 +1842,7 @@ header {
 /* ========== Mobile (≤480px) ========== */
 @media (max-width: 480px) {
   #specialist-section {
-    padding: 50px 10px;
+    padding: 50px 20px;
   }
 
   .specialist {
@@ -2135,8 +2083,8 @@ header {
   }
 
   .order h2 {
-    font-size: 22px;
-    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .order-tabs {
@@ -2406,7 +2354,7 @@ header {
 /* ========== Mobile (≤480px) ========== */
 @media (max-width: 480px) {
   #location-section {
-    padding: 40px 10px;
+    padding: 40px 20px;
   }
 
   .location {
@@ -2416,14 +2364,13 @@ header {
   }
 
   .location-text h2 {
-    font-size: 22px;
-    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .location-text p {
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
+    font-size: 20px;
+    line-height: 27px;
   }
 
   .location-text .clinics {
@@ -2448,16 +2395,9 @@ header {
     gap: 12px;
   }
 
-  .primary-btn,
-  .secondary-btn {
-    width: 100%;
-    font-size: 14px;
-    padding: 10px;
-  }
-
   .location .loc-img {
     width: 100%;
-    height: 450px;
+    height: auto;
     object-fit: cover;
     margin-top: 20px;
   }
@@ -2756,7 +2696,7 @@ header {
 /* ========== Mobile (≤480px) ========== */
 @media (max-width: 480px) {
   #appointment-section {
-    padding: 40px 10px;
+    padding: 40px 20px;
   }
 
   .appointment {
@@ -2764,8 +2704,8 @@ header {
   }
 
   .appointment h2 {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .appoint-cards {
@@ -2779,14 +2719,13 @@ header {
   }
 
   .appoint-card-text h3 {
-    font-size: 16px;
-    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .appoint-card-text p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 22px;
-    text-align: center;
   }
 
   .appoint-card-price {
@@ -2809,15 +2748,15 @@ header {
     width: fit-content;
   }
 
+  .price-icon-list {
+    justify-content: space-between;
+  }
+
   .price-icon-list span {
     font-size: 16px;
   }
 
-  .appoint-btn .primary-btn {
-    width: 100%;
-    font-size: 14px;
-    padding: 10px;
-  }
+
 }
 
 /* ========== Small Tablets (481px – 767px) ========== */
@@ -3066,136 +3005,6 @@ header {
   color: #333333;
 }
 
-/* ========== Mobile (≤480px) ========== */
-/* @media (max-width: 480px) {
-  #faq-section {
-    padding: 3rem 1rem;
-  }
-
-  .section-header .subtitle {
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.1em;
-  }
-
-  .section-header h2 {
-    font-size: 22px;
-    line-height: 30px;
-  }
-
-  .faq-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .faq-toggle {
-    padding: 1.2rem 0;
-    font-size: 14px;
-  }
-
-  .faq-toggle span {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .faq-icon {
-    width: 28px;
-    height: 28px;
-    font-size: 14px;
-  }
-
-  .faq-content p {
-    font-size: 14px;
-    line-height: 22px;
-  }
-} */
-
-/* ========== Small Tablets (481px – 767px) ========== */
-/* @media (min-width: 481px) and (max-width: 767px) {
-  #faq-section {
-    padding: 3.5rem 1.5rem;
-  }
-
-  .section-header .subtitle {
-    font-size: 18px;
-    line-height: 26px;
-  }
-
-  .section-header h2 {
-    font-size: 26px;
-    line-height: 34px;
-  }
-
-  .faq-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .faq-toggle {
-    padding: 1.5rem 0;
-    font-size: 15px;
-  }
-
-  .faq-toggle span {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .faq-icon {
-    width: 32px;
-    height: 32px;
-    font-size: 15px;
-  }
-
-  .faq-content p {
-    font-size: 15px;
-    line-height: 24px;
-  }
-} */
-
-/* ========== Large Tablets (768px – 1024px) ========== */
-/* @media (min-width: 768px) and (max-width: 1024px) {
-  #faq-section {
-    padding: 4rem 2rem 0 2rem;
-  }
-
-  .section-header .subtitle {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  .section-header h2 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .faq-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-  }
-
-  .faq-toggle {
-    padding: 1.8rem 0;
-    font-size: 16px;
-  }
-
-  .faq-toggle span {
-    font-size: 20px;
-    line-height: 26px;
-  }
-
-  .faq-icon {
-    width: 34px;
-    height: 34px;
-    font-size: 16px;
-  }
-
-  .faq-content p {
-    font-size: 16px;
-    line-height: 26px;
-  }
-} */
-
 /* FAQ SECTION TESTING */
 
 
@@ -3213,12 +3022,12 @@ header {
   }
 
   .section-text h2 {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .section-text p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 22px;
   }
 
@@ -3227,7 +3036,9 @@ header {
   }
 
   .faq-toggle span {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
   }
 
   .faq-icon {
@@ -3455,8 +3266,8 @@ header {
   }
 
   .articles h2 {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .blogs {
@@ -3482,12 +3293,6 @@ header {
     width: 100%;
     font-size: 14px;
     padding: 8px 12px;
-  }
-
-  .article-btn .primary-btn {
-    width: 100%;
-    font-size: 14px;
-    padding: 10px;
   }
 }
 
@@ -3899,7 +3704,12 @@ header {
 
   .contact-bar {
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 12px;
+  }
+
+  .contact-box {
+    width: 45%;
   }
 
   .footer-details-section {
